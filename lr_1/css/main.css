@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,7 +21,6 @@ body {
     position: relative;
     font-size: 14px;
     cursor: pointer;
-    transition: .3s;
 }
 
 .btn span {
@@ -43,4 +41,34 @@ body {
     font-size: 16px;
     border-width: 1px;
     border-color: darkslateblue;
+}
+
+li { 
+    list-style-type: none;
+} 
+
+ol {
+    counter-reset: list1;
+}
+
+ol li:before {
+    counter-increment: list1;
+    content: counter(list1) ". ";
+}
+
+ol ol {
+    counter-reset: list2;
+}
+
+ol ol li:before {
+    counter-increment: list2; 
+    content: counter(list1) "." counter(list2) ". ";
+}
+
+p {
+    font-size: 12px;
+    display: inline;
+    color: gray;
+    margin: 0px;
+    padding: 0;
 }
