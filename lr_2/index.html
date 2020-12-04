@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <link href="/static/styles/bootstrap.min.css" rel="stylesheet">
+    <title>Морской бой</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div class="back">
+      <div class="container">
+        <h1 class="display-3">Морской бой</h1>
+        <p>Игра со стандартными правилами.<br>Расположение кораблей генерируется случайным образом.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tablesContainer">
+        <table id="playerTable">
+          <caption>Моё поле</caption>
+          <thead>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+              <tr>
+              <!-- <td colspan="4" class='totalPersons'> Total <b>3</b> persons</td> -->
+              </tr>
+          </tfoot>
+        </table>
+        <table id="enemyTable">
+          <caption>Противник</caption>
+          <thead>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+              <tr>
+              <!-- <td colspan="4" class='totalPersons'> Total <b>3</b> persons</td> -->
+              </tr>
+          </tfoot>
+        </table>
+      </div>
+    <footer>
+      <p>&copy; Kuznetsov Nikita / UNN 2020</p>
+    </footer>
+    </div>
+    <script src="/static/client.js"></script>
+  </body>
+</html>

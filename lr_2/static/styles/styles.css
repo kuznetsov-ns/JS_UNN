@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.back {
+  margin: 30px;
+  text-align: center;
+}
+
+.tablesContainer {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+table {
+  border: 1px double black;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+table caption {
+  font-size: 1.875em;
+  text-align: center;
+}
+
+table caption.whoTurns {
+  color: #05c46b;
+  font-weight: 600;
+}
+
+td, 
+th {
+  width: 30px;
+  height: 30px;
+  background: #D6D6D6;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+th {
+  text-align: center;
+}
+
+#enemyTable td:hover {
+  border: 2px solid #FF9900;
+}
+
+td.empty {
+  background: #F5F5F5;
+}
+
+#enemyTable td.empty:hover {
+   border: 2px solid #05c46b;
+}
+
+td.ship1x,
+td.ship2x,
+td.ship3x,
+td.ship4x {
+  background: #05c46b;
+}
+
+td.miss {
+  background: #D6D6D6;
+}
+
+td.wounded {
+  background:#ef5777;
+}
+
+td.destroyed {
+  background:#f53b57;
+}
+
+footer {
+  text-align: center;
+  margin-top: 195px;
+}
