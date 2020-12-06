@@ -6,7 +6,6 @@ const app = express();
 const server = http.Server(app);
 const io = socketIO(server);
 
-
 var prompt = require('prompt');
   // Start the prompt
   prompt.start();
@@ -22,7 +21,7 @@ var prompt = require('prompt');
   });
   // Starts the server.
   server.listen(port, function() {
-    console.log('Starting server on port ' + port);
+    console.log('Starting server on the port ' + port);
   });
 
   const constants = Object.freeze({ 
@@ -98,7 +97,6 @@ class Cell {
         }
 
       }
-
       throw new Error("No empty place");
     },
 
@@ -168,7 +166,6 @@ class Cell {
       return false;
     }
   });
-
 
 class Ticket {
   constructor(serverID, clientID) {
@@ -256,15 +253,6 @@ class GameProcess {
 
 };
 
-/*printing*/
-// game.players.forEach(player => {
-//   let field = JSON.parse(JSON.stringify(player.field));
-
-//   field = field.map(arr => arr.map(x => x.type));
-//   console.table(field);
-// });
-/*end of printing*/
-
 class ServerProcess {
   constructor(io) {
     this.players = {};
@@ -286,7 +274,7 @@ class ServerProcess {
         return;
       }
 
-      console.log(`player #${socket.id} connected to game`);  
+      console.log(`player #${socket.id} connected to the game`);  
       players[ticket.ID] = game.players[ticket.ID]; 
 
       setTimeout( () => {
